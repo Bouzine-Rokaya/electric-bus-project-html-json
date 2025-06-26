@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Bus Cost Simulator</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; }
+    .container { background: #fff; padding: 20px; border-radius: 10px; max-width: 500px; margin: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h2, h3 { color: #015c28; }
+    label { display: block; margin: 10px 0 5px; }
+    input, select { width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background-color: #03cd4e; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #00b338; }
+    .result-section { display: none; margin-top: 20px; background: #eaffea; padding: 15px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Electric Bus Cost Simulator</h2>
+
+  <label for="busModel">Select Bus Model:</label>
+  <select id="busModel"></select>
+
+  <label for="extraKm">Extra Battery Range (km):</label>
+  <input type="number" min="0" id="extraKm" placeholder="Enter extra kilometers">
+
+  <label>Additional Options:</label>
+  <div>
+    <label><input type="checkbox" name="options" value="specialPaint"> Special Paint</label>
+    <label><input type="checkbox" name="options" value="premiumInterior"> Premium Interior</label>
+    <label><input type="checkbox" name="options" value="advancedSafety"> Advanced Safety</label>
+    <label><input type="checkbox" name="options" value="solarPanels"> Solar Panels</label>
+  </div>
+
+  <button class="calculate">Calculate Total Cost</button>
+
+  <div class="result-section"></div>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>

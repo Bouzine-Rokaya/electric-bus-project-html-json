@@ -1,0 +1,36 @@
+{
+  "busModels": [
+    {
+      "model": "E-Bus X1",
+      "basePrice": 300000,
+      "batteryCostPerKm": 150,
+      "options": {
+        "specialPaint": 5000,
+        "premiumInterior": 10000
+      },
+      "governmentAid": 20000
+    },
+    {
+      "model": "E-Bus Y2",
+      "basePrice": 350000,
+      "batteryCostPerKm": 200,
+      "options": {
+        "specialPaint": 7000,
+        "premiumInterior": 15000,
+        "advancedSafety": 12000
+      },
+      "governmentAid": 25000
+    },
+    {
+      "model": "E-Bus Z3",
+      "basePrice": 400000,
+      "batteryCostPerKm": 180,
+      "options": {
+        "specialPaint": 8000,
+        "premiumInterior": 20000,
+        "solarPanels": 15000
+      },
+      "governmentAid": 30000
+    }
+  ]
+}
